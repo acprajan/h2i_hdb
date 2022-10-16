@@ -1,0 +1,23 @@
+{
+    "dev" : {
+        "host" : "h2i.c3pftlx47xgg.us-east-2.rds.amazonaws.com",
+        "port" : "5432",
+        "db_name" : "postgres",
+        "user_id" : "h2i",
+        "password" : "hydroinformatics"
+    },
+    "params" : {
+        "tables" : {
+            "car_park_availability" : {
+                "table_name" : "car_park_availability"
+            },
+            "car_park_information" : {
+                "table_name" : "car_park_information"
+            }
+        },
+        "source_urls" : {
+            "car_park_availability" : "https://api.data.gov.sg/v1//transport/carpark-availability",
+            "car_park_information" : "https://data.gov.sg/api/action/datastore_search?resource_id=139a3035-e624-4f56-b63f-89ae28d4ae4c"
+        }
+    }
+}
